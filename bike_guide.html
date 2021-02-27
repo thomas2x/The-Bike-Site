@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 
-<!-- Week 5 Assignment: Rough Home Page for Capstone Porject - Created by Thomas Thomas
+<!-- Week 5 Assignment: Nav bar, Icons, Sortable Table - Created by Thomas Thomas
 -->
 
 
 <html>
 <head>
-  <title>Bike Fitting</title>
+  <title>Bike Guide</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial=scale1.0">
   <link rel="stylesheet" href="stylesheet/bikesite.css">
@@ -37,12 +37,108 @@
   </nav>
 </div>
 
-<main>
 
-      <h1>Bike Fitting Guide</h1>
+<main>
+  <div id="bike_fitting_main">
+    <script src="bike_guide.js"></script>
+
+  <div id="bike_guide_main">
+      <h1>The Bike Site</h1>
+
+      <h2> Top Bikes $1500 and under </h2>
+            <!--  Dropdown button -->
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Sort Price</button>
+
+              <div id="myDropdown" class="dropdown-content">
+                <p><button onclick="sortTable_LH()">Low to high</button></p>
+                <p><button onclick="sortTable_HL()">High to Low</button></p>
+              </div>
+            </div>
+
+      <!-- Sortable table -->
+      <table id="myTable">
+        <tr>
+          <th>Price (USD $)</th>
+          <th>Model</th>
+          <th>Brand</th>
+          <th>Type</th>
+          <th>Weight</th>
+        </tr>
+        <tr>
+          <td>1050</td>
+          <td>Allez Sport</td>
+          <td>Specialized</td>
+          <td>Road</td>
+          <td>9.66 kg</td>
+        </tr>
+        <tr>
+          <td>1000</td>
+          <td>Contend AR3</td>
+          <td>Giant </td>
+          <td>Road</td>
+          <td>10.2 kg</td>
+        </tr>
+        <tr>
+          <td>1000</td>
+          <td>Avail AR3</td>
+          <td>Liv</td>
+          <td>Road</td>
+          <td>10 kg</td>
+        </tr>
+        <tr>
+          <td>1260</td>
+          <td>Merit 3</td>
+          <td>Raleigh</td>
+          <td>Road</td>
+          <td>10.5 kg</td>
+        </tr>
+        <tr>
+          <td>1480</td>
+          <td>Checkpoint AL4</td>
+          <td>Trek </td>
+          <td>Gravel</td>
+          <td>11 kg</td>
+        </tr>
+        <tr>
+          <td>1250</td>
+          <td>Topstone Sora</td>
+          <td>Cannondale</td>
+          <td>Gravel</td>
+          <td>10.3 kg</td>
+        </tr>
+        <tr>
+          <td>1470</td>
+          <td>Fugio 20 </td>
+          <td>Genesis </td>
+          <td>Gravel</td>
+          <td>11 kg</td>
+        </tr>
+        <tr>
+          <td>1500</td>
+          <td>Mythique 27 VR</td>
+          <td>Vitus</td>
+          <td>Mountain</td>
+          <td>14.8 kg</td>
+        </tr>
+        <tr>
+          <td>1300</td>
+          <td>DECK300 Carbon Fiber</td>
+          <td>SAVADECK </td>
+          <td>Mountain</td>
+          <td>12.8 kg</td>
+        </tr>
+        <tr>
+          <td>700</td>
+          <td>Rockhopper Sport 29</td>
+          <td>Specialized</td>
+          <td>Mountain</td>
+          <td>14 kg</td>
+        </tr>
+
+      </table>
 
   </div>
-
 </main>
 
 
@@ -54,4 +150,3 @@
 
 </body>
 </html>
-
