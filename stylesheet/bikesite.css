@@ -1,6 +1,6 @@
-/*Style sheet for The Bike Site - Week 4 Assignment: Capstone Project by Thomas Thomas */
+/*Style sheet for The Bike Site - Week 5 Assignment: Nav Bar and Table for Capstone Project by Thomas Thomas */
 
-/*all typical selectors below, go to line 59 for div items */
+/*all typical selectors below, go to line 59 for div items, line 94 for bike_guide.html items */
 
 
 body {
@@ -89,4 +89,60 @@ footer a:hover {
 video {
   width: 100%;
   height: auto;
+}
+
+/* Specific stylization for bike_fitting.hmtl */
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown p:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
 }
